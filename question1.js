@@ -3,7 +3,7 @@ function swapCase(inputString) {
     // Using regular expression to replace alphabetic characters with their swapped case
     return inputString.replace(/[a-zA-Z]/g, function(char) {
         // If character is lowercase, convert to uppercase; otherwise, convert to lowercase
-        return char === char.toLowerCase() ? char.toUpperCase() : char.toLowerCase();
+        return char === char.toLowerCase() && char.toUpperCase() || char.toLowerCase();
     });
 }
 
